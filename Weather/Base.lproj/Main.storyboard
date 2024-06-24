@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Weather" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Mikar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aNH-cP-fqt">
+                                <rect key="frame" x="159" y="88" width="77" height="39"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mik" translatesAutoresizingMaskIntoConstraints="NO" id="TyJ-QN-oHr">
+                                <rect key="frame" x="121.66666666666669" y="151" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="150" id="1kA-na-Sbv"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="IJs-iX-HZK"/>
+                                    <constraint firstAttribute="height" constant="150" id="eEL-lO-PZx"/>
+                                    <constraint firstAttribute="width" constant="150" id="fxd-nS-trk"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="150" id="tB5-j1-Iha"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6oO-TW-cx4">
+                                <rect key="frame" x="155.66666666666666" y="337" width="82" height="34.333333333333314"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal">
+                                    <color key="titleColor" systemColor="secondarySystemBackgroundColor"/>
+                                </state>
+                                <buttonConfiguration key="configuration" style="filled" title="Погода">
+                                    <color key="baseForegroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="aNH-cP-fqt" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="9AY-Vu-fgy"/>
+                            <constraint firstItem="aNH-cP-fqt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="11" id="ASY-Fe-zSK"/>
+                            <constraint firstItem="TyJ-QN-oHr" firstAttribute="top" secondItem="aNH-cP-fqt" secondAttribute="bottom" constant="45" id="KVw-KK-soJ"/>
+                            <constraint firstItem="TyJ-QN-oHr" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Yab-ep-V1r"/>
+                            <constraint firstItem="6oO-TW-cx4" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="amR-jr-Eiv"/>
+                            <constraint firstItem="6oO-TW-cx4" firstAttribute="top" secondItem="TyJ-QN-oHr" secondAttribute="bottom" constant="36" id="nAE-OT-G2P"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="getWeatherButton" destination="6oO-TW-cx4" id="nSP-yi-ZgU"/>
+                        <outlet property="weatherLabel" destination="aNH-cP-fqt" id="EeR-7s-xH7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="35.877862595419849" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="mik" width="736" height="736"/>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
